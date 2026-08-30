@@ -1,6 +1,6 @@
 FROM node:22-alpine AS build
 WORKDIR /app
-RUN corepack enable
+RUN corepack enable && corepack prepare pnpm@10.15.0 --activate
 COPY . .
 RUN pnpm install
 ARG VITE_KEYGEN_ACCOUNT_ID=f18c8e0a-5792-43c7-bbec-e9fb32766107
