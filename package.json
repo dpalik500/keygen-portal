@@ -7,6 +7,15 @@
     "node": ">=22",
     "pnpm": ">=10"
   },
+  "pnpm": {
+  "onlyBuiltDependencies": [
+    "esbuild",
+    "@tailwindcss/oxide",
+    "@sentry/cli",
+    "sharp",
+    "workerd"
+  ]
+},
   "scripts": {
     "dev": "vite",
     "generate": "pnpm generate:routes",
