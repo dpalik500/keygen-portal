@@ -2,7 +2,7 @@ FROM node:22-alpine AS build
 WORKDIR /app
 RUN corepack enable
 COPY . .
-RUN pnpm install --frozen-lockfile
+RUN pnpm install
 ARG VITE_KEYGEN_ACCOUNT_ID=f18c8e0a-5792-43c7-bbec-e9fb32766107
 ARG VITE_KEYGEN_EDITION=CE
 ARG VITE_KEYGEN_MODE=singleplayer
