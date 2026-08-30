@@ -7,9 +7,11 @@ configDependencies:
 minimumReleaseAge: 4320
 
 onlyBuiltDependencies:
-  - '@sentry/cli'
+  - esbuild
   - '@tailwindcss/oxide'
-  - 'vite'
+  - '@sentry/cli'
+  - sharp
+  - workerd
 
 onlyBuiltDependenciesFile: node_modules/.pnpm-config/@pnpm/plugin-trusted-deps/allow.json
 
